@@ -1,0 +1,64 @@
+<!doctype html>
+<html lang=en>
+<head>
+<title>Halma Multiplayer</title>
+<link rel="stylesheet" href="http://cdn.airy.me/reset.css">
+<link rel="stylesheet" href="assets/halma.css">
+<link rel="stylesheet/less" href="assets/css3.less">
+</head>
+<body>
+<div class="wrap">
+	<div id="side">
+		<div class="title"><h1>Halma</h1></div>
+		<div class="chat">
+			<h2>Chat</h2>
+			<div class="text"></div>
+			<input type="text">
+		</div>
+		<div class="lobby">
+			<h2>Lobby</h2>
+			<div class="games"></div>
+		</div>
+		<div class="newgame">
+			<h2>New Game</h2>
+			<span class="caption">Game title</span><br>
+			<input type="text"><br>
+			<span class="caption">Board size</span> <select><option>9</option><option>11</option><option>14</option></select>
+			<button class="btn">Start game</button>	
+		</div>
+		<div class="leaders">
+			<h2>Leaders</h2>
+			
+		
+		</div>
+	</div>
+	<div id="main">
+		<div class="status">
+			<span class="info"></span>
+			<div class="buttons">
+				<button class="btn skip hide">Skip turn</button>
+				<button class="btn quit hide">Quit game</button>	
+			</div>
+		</div>
+		<div id="game">
+			<canvas id="c"></canvas>
+		</div>
+		<div class="social">
+			<div class="lt">
+				<a href="http://twitter.com/share" class="twitter-share-button" data-url="http://games.airy.me/halma" data-text="Halma - HTML5 game" data-count="horizontal" data-via="tomsendze">Tweet</a><script type="text/javascript" src="http://platform.twitter.com/widgets.js"></script>
+			</div>
+			<div class="clear"></div>
+		</div>
+	</div>
+	<div class="clear"></div>
+</div>
+
+<script src="http://cdn.airy.me/jquery.js"></script>
+<script src="http://cdn.airy.me/modernizr.js"></script>
+<script src="http://cdn.airy.me/less.js"></script>
+<script src="http://cdn.airy.me/socket.io.js"></script>
+<script src="assets/Game.js"></script>
+<script src="assets/Lobby.js"></script>
+<script src="assets/halma.js"></script>
+</body>
+</html>
